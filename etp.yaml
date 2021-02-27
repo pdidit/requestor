@@ -45,7 +45,7 @@ spec:
     spec:
       containers:
         - name: webservice
-          image: etp:V1
+          image: pdidit1/etp-long
           env:
             - name: DATABASE_URL
               value: "database_endoint.prod.svc.cluster.local:3306/Requestor"
@@ -54,4 +54,4 @@ spec:
             - name: DATABASE_PASSWORD
               value: "P@ssword123"
           ports:
-            - containerPort: 3000
+            - containerPort: 8080
